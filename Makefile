@@ -10,7 +10,7 @@ all: $(SRCDIR)/ctap.o
 $(SRCDIR)/ctap.o: $(SRCDIR)/ctap.c $(SRCDIR)/ctap.h
 
 clean:
-	-rm -rf $(SRCDIR)/ctap.[cho]
+	-rm -rf $(SRCDIR)/ctap.o
 
 test:
 	$(CC) misc/main.c misc/ctap.c -o misc/test.out
