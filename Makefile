@@ -7,13 +7,13 @@ SRCDIR     = src
 
 all: $(SRCDIR)/ctap.o
 
-$(SRCDIR)/ctap.o: $(SRCDIR)/ctap.c $(SRCDIR)/ctap.h
+$(SRCDIR)/ctap.o: $(SRCDIR)/newctap.h
 
 clean:
 	-rm -rf $(SRCDIR)/ctap.o
 
 test:
-	$(CC) misc/main.c misc/ctap.c -o misc/test.out
+	$(CC) misc/main.c -o misc/test.out
 	misc/test.out
 
 .c.o:

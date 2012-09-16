@@ -1,4 +1,4 @@
-#include "ctap.h"
+#include "newctap.h"
 
 void test_subtest(void)
 {
@@ -15,7 +15,7 @@ void test_subtest_fail(void)
     ok(1);
 
     is_int(1, 1, "is_int with comment(%d <=> %d)", 1, 1);
-    is_double(1.0, 0.0);
+    is_double(1.0, 1.0);
 }
 
 int main(void)
